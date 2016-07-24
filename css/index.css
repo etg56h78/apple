@@ -1,0 +1,385 @@
+body,html{
+	margin: 0;
+	height: 100%;
+}
+ul,li,h1,h2{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+a{
+	text-decoration: none;
+
+}
+.nav{
+	height: 44px;
+	background: rgba(0,0,0,.7);
+}
+.nav .max-nav{
+	max-width: 1024px;
+	height: 100%;
+	margin: 0 auto;
+	/*background: green;*/
+	text-align: justify;
+}
+.nav .max-nav:after{
+	content: "";
+	line-height: 0;
+	height: 0;
+	display: inline-block;
+	width: 100%;
+}
+.nav .max-nav li{
+	display: inline-block;
+	line-height: 44px;
+}
+.nav .max-nav li a{
+	color: #fff;
+}
+.nav .min-nav{
+	display: none;
+}
+.min-nav{
+	width: 100%;
+	height: 44px;
+	/*margin-left: -15px;*/
+	/*margin-right: -15px;*/
+}
+.min-top{
+	width: 100%;
+	height: 44px;
+	/*line-height: 44px;*/
+	text-align: justify;
+
+}
+.min-top:after{
+	content: "";
+	height: 0;
+	display: inline-block;
+	width: 100%;
+	line-height: 0;
+}
+.min-top .nav-left{
+	width: 40px;
+	height: 44px;
+	text-align: center;
+	/*border: 1px solid red;*/
+}
+.min-top li{
+	vertical-align: middle;
+	display: inline-block;
+}
+.min-top li a{
+	color: #fff;
+	font-size: 22px;
+}
+.min-top li span:nth-child(1){
+	width: 60%;
+	height: 1px;
+	background: #fff;
+	display: block;
+	margin: 0 auto;
+	margin-top: 14px;
+    transition:all .5s;
+}
+.min-top .nav-left.active .yi{
+	transform: translateY(7px) rotate(135deg);
+}
+.min-top li span:nth-child(2){
+	width: 60%;
+	height: 1px;
+	background: #fff;
+	display: block;
+	margin: 0 auto;
+	margin-top: 13px;
+	transition:all .5s;
+}
+.min-top .nav-left.active .er{
+	transform: translateY(-7px) rotate(45deg);
+}
+.min-nav .xiala{
+	display: none; 	
+	width: 100%;
+	/*height: 1000px;*/
+	background: rgba(0,0,0,.9);
+	border-top: 1px solid transparent;
+	z-index: 100;
+}
+.min-nav .xiala li:nth-child(1){
+	margin-top: 10px;
+}
+.min-nav .xiala li{
+	margin-left: 50px;
+	margin-right: 50px;
+	border-bottom: 1px solid #ccc;
+    padding-top: 14px;
+    padding-bottom: 14px;
+}
+.min-nav .xiala li a{
+	color: #fff;
+}
+
+.banner{
+	height: 100%;
+}
+
+.max-banner{
+	
+	width: 100%;
+	height: 100%;
+	/*background: green;*/
+	overflow: hidden;
+}
+.max-banner .banner-box{
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+.max-banner .banner-box .tupian{
+	position: absolute;
+	left:100% ;
+	/*background: red;*/
+	height: 100%;
+	width: 100%;
+	float: left;
+	text-align: center;
+	overflow: hidden;
+}
+.max-banner .banner-box li a{
+	display: inline-block;
+	width: 100%;
+    /*position: relative;*/
+}
+.max-banner .banner-box li h1{
+	font-size: 36px;
+	padding-top: 40px;
+}
+.max-banner .banner-box li div{
+	font-size: 24px;
+	margin-top: 20px;
+}
+.max-banner .banner-box li .content2{
+	margin-top: 5px;
+}
+.max-banner .banner-box li:nth-child(4) img{
+	width: 100%;
+}.max-banner .banner-box li:nth-child(1) img{
+	width: 100%;
+}
+
+
+.small-banner{
+	text-align: center;
+	width: 100%;
+    height: 200px;
+    /*background: green;*/
+    /*position: relative;*/
+}
+
+.small-banner a{
+	display: block;
+	width: 100%;
+	position: relative;
+	height: 100%;
+	margin-top: 6px;
+	text-align: center;
+	overflow: hidden;
+}
+.small-banner a img{
+	position: absolute;
+	left: 50%;
+	/*height: 100%;*/
+	/*width: 100%;*/
+	transform:translateX(-50%);
+}
+
+.hh a{
+	display: block;
+	width: 100%;
+	color: #555;
+    font-size: 10px;
+}
+.aaa{
+	padding-left: 80px!important;
+}
+
+
+
+
+
+@media screen and (max-width:600px){
+	.nav .min-nav{
+	display: block;
+}
+    .nav .max-nav{
+	display: none;
+}
+.hh{
+    display: none;
+   }
+   .banner{
+	height: 345px;
+}
+  .max-banner{
+	position: relative;
+	width: 100%;
+	height: 345px;
+	/*background: green;*/
+	overflow: hidden;
+}
+.max-banner .banner-box{
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+.max-banner .banner-box .tupian{
+	position: absolute;
+	left:100% ;
+	/*background: red;*/
+	height: 100%;
+	width: 100%;
+	float: left;
+	text-align: center;
+	overflow: hidden;
+	/*background: #ccc;*/
+}
+.max-banner .banner-box li a{
+	display: inline-block;
+	width: 100%;
+     margin-top: 20px;
+     position: relative;
+}
+.max-banner .banner-box li h1{
+	font-size: 36px;
+	/*padding-top: 0;*/
+	padding-top: 20px;
+}
+.max-banner .banner-box li div{
+	font-size: 16px;
+	margin-top: 20px;
+}
+.max-banner .banner-box li .content2{
+	margin-top: 5px;
+}
+.max-banner .banner-box li img{
+	width: 60%;
+}
+.btn-left{
+	font-size: 80px;
+	position: absolute;
+	left: 40px;
+	top: 120px;
+	/*border:1px solid blue;*/
+	width: 60px;
+	height: 120px;
+	text-align: center;
+	line-height: 120px;
+	color: #ccc;
+}
+.btn-right{
+	font-size: 80px;
+	position: absolute;
+	right: 40px;
+	top: 120px;
+	/*border:1px solid blue;*/
+	width: 60px;
+	height: 120px;
+	text-align: center;
+	line-height: 120px;
+	color: #ccc;
+}
+.small-banner a img{
+	position: absolute;
+	left: 50%;
+	/*height: 100%;*/
+	/*width: 100%;*/
+	transform:translateX(-50%);
+}
+
+
+
+.xiao{
+	width: 100%;
+	height: auto;
+	background: #eee;
+	padding: 0 20px;
+}
+.xiao li{
+	width: 100%;
+	height: auto;
+	padding: 10px 0px;
+	/*background: yellow;*/
+	overflow: hidden;
+	border-bottom: 1px solid #ccc;
+}
+.xiao li .zuo{
+	width: 80%;
+	float: left;
+	font-size: 12px;
+
+	/*background: green;*/
+
+}
+.xiao li .jias{
+	position: relative;
+	float: right;
+	width: 10%;
+	/*background: red;*/
+	height: 20px;
+}
+.xiao li .jias .ss1{
+	position: absolute;
+    right: 10px;
+    top: 5px;
+	width: 1px;
+	height: 10px;
+	background: black;
+	display: inline-block;
+}
+.xiao li .jias .ss2{
+	position: absolute;
+    right: 5px;
+    top: 9px;
+	width: 11px;
+	height: 1px;
+	background: black;
+	display: inline-block;
+}
+
+.xia{
+	float: left;
+	width: 100%;
+	height: auto;
+	/*display: none;*/
+}
+.xia a{
+	width: 100%;
+	display: block;
+	padding: 5px 10px;
+	color: #555;
+	font-size: 12px;
+}
+
+}
+
+
+
+
+
+@media screen and (min-width:600px){
+	.nav .min-nav{
+	display: none;
+}
+    .nav .max-nav{
+	display: block;
+}
+.max-banner{
+   	display: block;
+   }
+   .min-banner{
+   	display: none;
+   }
+   .xiao{
+   	display: none;
+   }
+}
