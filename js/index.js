@@ -10,9 +10,11 @@ $(function(){
     
     var banner=$(".banner");
     var jia=$(".jias");
-    console.log(jia)
+    // console.log(jia)
     var xia=$(".xia");
-    console.log(xia)
+    // console.log(xia);
+    var as=$(".xiao li")
+    console.log(as)
     $xiala[0].style.display="none";
 
 	$menu.click(function(){
@@ -21,11 +23,13 @@ $(function(){
 		$xiala.css({"display":"block","height":ch-44})
         banner.css({"display":"none"})
         $smbanner.css({"display":"none"})
+        as.css({"display":"none"})
 	}else{
 		$(this).removeClass("active");
 		$xiala.css({"display":"none"});
 		banner.css({"display":"block"})
     $smbanner.css({"display":"block"});
+    as.css({"display":"block"})
 	}
     
   })
@@ -68,7 +72,7 @@ banner.mouseout(function(){
  
  jia.click(function(){
   var index=$(this).index(".jias");
-  console.log(index)
+ 
     if(xia[index].style.display=="none"){
       xia.eq(index).css({"display":"block"})
     }
